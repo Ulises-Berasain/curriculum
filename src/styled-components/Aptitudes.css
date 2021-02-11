@@ -1,0 +1,93 @@
+.aptitudes{
+    display:grid;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 5vh 40vh 40vh 40vh 40vh;
+}
+
+.title-aptitudes{
+    grid-column: 1/4;
+    grid-row: 1;
+    margin: auto;
+}
+
+.react{
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+}
+
+.javascript{
+    grid-column:2;
+    grid-row: 3;
+    margin: auto;
+}
+
+.css{
+    grid-column: 2;
+    grid-row: 4;
+    margin: auto;
+}
+
+.html{
+    grid-column: 2;
+    grid-row: 5;
+    margin: auto;
+}
+
+.react, .javascript, .css, .html{
+    transition: transform 0.5s;
+}
+
+.react:hover, .javascript:hover, .css:hover, .html:hover{
+    transform: scale(1.1);
+}
+
+.react-logo, .javascript-logo, .css-logo, .html-logo{
+    max-width: 50%;
+    display:block;
+    margin:auto;
+}
+
+@media screen and (min-width: 480px){
+    .aptitudes{
+        display:grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: 5vh 40vh 40vh;
+    }
+
+    .title-aptitudes{
+        grid-column: 1/3;
+    }
+
+    .react{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .javascript{
+        grid-column:2;
+        grid-row: 2;
+    }
+    
+    .css{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .html{
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .react-logo, .javascript-logo, .css-logo, .html-logo{
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .react-logo, .javascript-logo, .css-logo, .html-logo{
+        max-width: 32%;
+    }
+}

@@ -1,0 +1,148 @@
+.portfolio{
+    display:grid;
+    grid-template-rows:10vh 10vh 40vh 10vh 40vh 40vh 45vh;
+    grid-template-columns: repeat(3, 33.33vw);
+}
+
+.title-portfolio{
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+}
+
+.title-gh-pages, .title-git-hub{
+    font-size: 20px;
+}
+
+.title-git-hub{
+    grid-column: 1/4;
+    grid-row: 2;
+    text-align: center;
+}
+
+.git-hub, .pokedex-react, .pokedex-javascript, .gran-dt{
+    display:grid;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.title-gh-pages{
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: center;
+    margin:1rem;
+}
+
+.git-hub{
+    grid-column: 1/4;
+    grid-row: 3;
+} 
+
+.pokedex-react{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.pokedex-javascript{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.gran-dt{
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.git-hub-logo, .rotom-dex, .pokeball-logo, .pelota-logo{
+    max-width: 50vw;
+    transition: transform 0.5s ease;
+    display:block;
+    margin:auto;
+}
+
+.git-hub-logo:hover, .rotom-dex:hover, .pokeball-logo:hover, .pelota-logo:hover{
+    transform: scale(1.1);
+}
+
+.git-hub, .pokedex-react, .pokedex-javascript, .gran-dt{
+    font-size: 18px;
+}
+
+@media screen and (min-width: 480px){
+    .title-gh-pages, .title-git-hub{
+        font-size: 25px;
+    }
+
+    .git-hub-logo, .rotom-dex, .pokeball-logo, .pelota-logo{
+        max-width: 35vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .portfolio{
+        grid-template-rows:10vh 10vh 40vh 10vh 50vh;
+    }
+
+    .title-portfolio{
+        font-size: 40px;
+    }
+
+    .title-gh-pages, .title-git-hub{
+        font-size: 30px;
+    }
+
+    .git-hub-logo, .rotom-dex, .pokeball-logo, .pelota-logo{
+        max-width: 25vw;
+    }
+
+    .pokedex-react{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .pokedex-javascript{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .gran-dt{
+        grid-column: 3;
+        grid-row: 5;
+    }    
+}
+
+@media screen and (min-width: 1200px){
+    .title-portfolio{
+        font-size: 50px;
+    }
+
+    .title-gh-pages, .title-git-hub{
+        font-size: 32px;
+    }
+
+    .git-hub-logo, .rotom-dex, .pokeball-logo, .pelota-logo{
+        max-width: 18vw;
+    }
+
+    .pokedex-react{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .pokedex-javascript{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .gran-dt{
+        grid-column: 3;
+        grid-row: 5;
+    }    
+
+    .git-hub, .pokedex-react, .pokedex-javascript, .gran-dt{
+        font-size: 25px;
+    }
+}
