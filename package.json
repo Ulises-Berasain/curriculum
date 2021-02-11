@@ -1,6 +1,6 @@
 {
   "name": "curriculum",
-  "homepage":"ulises-berasain.github.io/curriculum",
+  "homepage":"https://ulises-berasain.github.io/curriculum/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
