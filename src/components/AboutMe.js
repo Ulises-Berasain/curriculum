@@ -5,8 +5,10 @@ import "styled-components/AboutMe.css";
 export default function AboutMe(){
     return(
         <div className="containter-ub-info" id="about-me">
-            <h2>Acerca de mí</h2>
-            <img className="profile-picture"src={profilePicture}/>
+            <h1>Acerca de mí</h1>
+            <div className="container-profile-picture">
+                <img className="profile-picture"src={profilePicture}/>
+            </div>
             <div className="container-info">
                 <p>Mi nombre es <strong>Ulises Berasain</strong>, naci el <strong>11 de Marzo de 1994</strong> y actualmente resido en <strong>Azul, Provincia de Buenos Aires, Argentina</strong>.<br/>
                     Actualmente me encuentro estudiando de forma autodidacta Desarrollo Web para poder convertirme en <strong>Full Stack Web Developer</strong>.<br/>

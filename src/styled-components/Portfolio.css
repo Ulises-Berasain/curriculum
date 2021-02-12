@@ -1,58 +1,61 @@
 .portfolio{
     display:grid;
-    grid-template-rows:10vh 10vh 40vh 10vh 40vh 40vh 45vh;
-    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows:10vh 10vh max-content 10vh max-content max-content max-content;
+    grid-template-columns: 100vw;
 }
 
 .title-portfolio{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 1;
     text-align: center;
+    margin:1rem;
 }
 
 .title-gh-pages, .title-git-hub{
     font-size: 20px;
+    margin:1rem;
 }
 
 .title-git-hub{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 2;
     text-align: center;
 }
 
 .git-hub, .pokedex-react, .pokedex-javascript, .gran-dt{
     display:grid;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 5vh max-content;
     text-align: center;
     justify-content: center;
     text-decoration: none;
     font-size: 14px;
+    margin:1rem;
 }
 
 .title-gh-pages{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 4;
     text-align: center;
     margin:1rem;
 }
 
 .git-hub{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 3;
 } 
 
 .pokedex-react{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 5;
 }
 
 .pokedex-javascript{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 6;
 }
 
 .gran-dt{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 7;
 }
 
@@ -83,19 +86,26 @@
 
 @media screen and (min-width: 768px){
     .portfolio{
-        grid-template-rows:10vh 10vh 40vh 10vh 50vh;
+        grid-template-rows:10vh 10vh max-content 10vh max-content;
+        grid-template-columns: repeat(3, 33.33vw);
     }
 
     .title-portfolio{
+        grid-column: 2;
         font-size: 40px;
     }
 
     .title-gh-pages, .title-git-hub{
+        grid-column: 2;
         font-size: 30px;
     }
 
+    .git-hub{
+        grid-column: 2;
+    }
+
     .git-hub-logo, .rotom-dex, .pokeball-logo, .pelota-logo{
-        max-width: 25vw;
+        max-width: 20vw;
     }
 
     .pokedex-react{
@@ -111,10 +121,18 @@
     .gran-dt{
         grid-column: 3;
         grid-row: 5;
-    }    
+    }
+    
+    .git-hub span, .gran-dt span, .pokedex-javascript span, .pokedex-react span{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1200px){
+    .git-hub span, .gran-dt span, .pokedex-javascript span, .pokedex-react span{
+        font-size: 20px;
+    }
+
     .title-portfolio{
         font-size: 50px;
     }

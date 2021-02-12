@@ -5,16 +5,16 @@ export default function Studies(){
     return(
         <div className="studies" id="studies">
             <div className="education">
-                <h2>Educación</h2>
+                <h1>Educación</h1>
                 <div className="high-school">
                     <h3>Escuela De Educación Secundaria Técnica Nº2 "Vicente Pereda" (2010 - 2012)</h3>
-                    <h4>Titulo Secundario</h4>
-                    <p><strong>Técnico en Informática profesional y personal</strong></p>
+                    <h4>Técnico en Informática profesional y personal</h4>
+                    <p>Titulo Secundario</p>
                 </div>
             </div>
 
             <div className="complementary-education">
-                <h2>Educación Complementaria</h2>
+                <h1>Educación Complementaria</h1>
                 <div className="google-activate">
                     <h3>Google Actívate (2020)</h3>
                     <ul>

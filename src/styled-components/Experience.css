@@ -1,49 +1,48 @@
 .experience-title{
+    margin:auto;
+    padding-top: 30px;
     text-align: center;
 }
 
 .experience{
     display:grid;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 5vh 1fr 5vh 1fr 5vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh max-content 5vh 1fr 5vh;
 }
 
 .quiniela, .marketing-academy{
     background: rgb(255, 255, 255);
-    transition: box-shadow 0.5s;
-    min-width: 100%;
+    box-shadow: 4px 4px 4px 4px rgb(128, 128, 128), -4px 4px 4px rgb(128, 128, 128);
+    min-width: 80vw;
+    max-width: 90vw;
     margin:auto;
-}
-
-.quiniela:hover, .marketing-academy:hover{
-    box-shadow: 5px 5px 5px 5px rgb(128, 128, 128), -5px 5px 5px rgb(128, 128, 128);
 }
 
 .date-quiniela{
     display: block;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     margin:auto;
     text-align: center;
     font-weight: 500;
 }
 
-.quiniela{
-    grid-column: 2;
+.container-quiniela{
+    grid-column: 1;
     grid-row: 2;
 }
 
 .date-ma{
     display: block;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
     margin:auto;
     text-align: center;
     font-weight: 500;
 }
 
-.marketing-academy{
-    grid-column: 2;
+.container-ma{
+    grid-column: 1;
     grid-row: 4;
 }
 
@@ -54,10 +53,15 @@
 
 .quiniela h3, .marketing-academy h3{
     text-align: center;
+    margin:1rem;
+    padding: 1rem;
 }
 
 .quiniela ul, .marketing-academy ul{
-    margin: 1rem;
+    margin: 0;
+    list-style: none;
+    display:grid;
+    justify-content: center;
 }
 
 .quiniela li, .marketing-academy li{
@@ -69,11 +73,6 @@
         min-width: 80%;
         max-width: 80%;
         margin:auto;
-    }
-
-    .quiniela ul, .marketing-academy ul{
-        display:grid;
-        justify-content: center;
     }
 }
 

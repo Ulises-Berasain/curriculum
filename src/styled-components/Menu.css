@@ -1,3 +1,7 @@
+.studieas{
+    max-width: 100vw;
+}
+
 .container-menu a{ 
     color: inherit;
     text-decoration: none;
@@ -25,7 +29,7 @@
     padding: 0;
     right: 0;
     top: 0;
-    width: 100px;
+    width: 100%;
     height: 48px;  
 }
 
@@ -71,6 +75,7 @@
 .container-menu-items{
     padding: 0;
     margin:0;
+    border:0;
 }
 
 .container-menu-items li{
@@ -104,9 +109,14 @@
     }
 
     .container-menu a{ 
+        display:inline-block;
         font-size: 14px;
-        min-width: 80%;
+        min-width: 70%;
+        max-width: 70%;
+        text-align: center;
+        margin:auto;
     }
+
 }
 
 @media screen and (min-width: 1200px){

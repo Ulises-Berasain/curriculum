@@ -1,3 +1,11 @@
+:root{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 87%, rgba(0,0,0,1) 100%);
+  max-width: 100vw;
+}
+
 .lead-content{
   margin-top:0;
   background-image: url(assets/img/fondo.jpg);
@@ -9,6 +17,7 @@
 header{
   position:fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .container-cv{
@@ -21,10 +30,15 @@ header{
   margin:0px;
 }
 
-.container-am, .container-studies, .container-aptitudes, .container-logo{
+.container-am, .container-studies, .container-aptitudes{
   background: rgb(255,255,255);
 }
 
 .container-experience, .container-portfolio, .container-contact{
   background: rgb(219, 219, 219);
+}
+
+.container-logo{
+  background: rgb(0, 0, 0);
+  margin: 0;
 }

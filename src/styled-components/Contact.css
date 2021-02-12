@@ -1,22 +1,35 @@
+.media{
+    margin: none;
+}
+
 .title-contact{
     text-align: center;
+    margin: 1rem;
+    padding: 2rem;
 }
 
 .social-media{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2, 40vw);
+    grid-auto-columns: 100vw;
+    grid-template-rows: auto;
+    margin:0;
+    padding: 0;
+    border:0;
 }
 
 .instagram, .twitter, .facebook, .email, .telefono, .linkedin{
     display:grid;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, max-content);
     text-align: center;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
+    padding: 1rem;
     text-decoration: none;
     transition: transform 0.5s ease;
     font-size: 14px;
+    overflow-wrap: break-word;
 }
 
 .instagram:hover, .twitter:hover, .facebook:hover, .email:hover, .telefono:hover, .linkedin:hover{
@@ -24,27 +37,29 @@
 }
 
 .instagram-logo, .twitter-logo, .facebook-logo, .email-logo, .wapp-logo, .in-logo{
-    max-width: 30vw;
+    max-width: 60%;
+    min-width: 60%;
     display:block;
     margin:auto;
 }
 
 @media screen and (min-width: 480px){
+    .social-media{
+        grid-template-columns: repeat(3, 33.33vw);
+    }
+
     .instagram, .twitter, .facebook, .email, .telefono, .linkedin{
         grid-template-rows: repeat(2,auto);
-        font-size: 16px;
         margin: 1rem;
     }
 
     .instagram-logo, .twitter-logo, .facebook-logo, .email-logo, .wapp-logo, .in-logo{
-        max-width: 25vw;
+        max-width: 100%;
+        min-width: 100%;
     }
 }
 
 @media screen and (min-width: 768px){
-    .social-media{
-        grid-template-columns: repeat(3, auto);
-    }
 
     .instagram, .twitter, .facebook, .email, .telefono, .linkedin{
         font-size: 18px;
@@ -52,7 +67,8 @@
     }
     
     .instagram-logo, .twitter-logo, .facebook-logo, .email-logo, .wapp-logo, .in-logo{
-        max-width: 20vw;
+        max-width: 60%;
+        min-width: 60%;
     }
 }
 
@@ -63,6 +79,7 @@
     }
 
     .instagram-logo, .twitter-logo, .facebook-logo, .email-logo, .wapp-logo, .in-logo{
-        max-width: 15vw;
+        max-width: 40%;
+        min-width: 40%;
     }
 }
