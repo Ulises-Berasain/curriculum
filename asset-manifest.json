@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/curriculum/static/css/main.3b009213.chunk.css",
-    "main.js": "/curriculum/static/js/main.e4f6c68b.chunk.js",
-    "main.js.map": "/curriculum/static/js/main.e4f6c68b.chunk.js.map",
+    "main.js": "/curriculum/static/js/main.08e74ea1.chunk.js",
+    "main.js.map": "/curriculum/static/js/main.08e74ea1.chunk.js.map",
     "runtime-main.js": "/curriculum/static/js/runtime-main.0339ef57.js",
     "runtime-main.js.map": "/curriculum/static/js/runtime-main.0339ef57.js.map",
     "static/js/2.20a499f5.chunk.js": "/curriculum/static/js/2.20a499f5.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/curriculum/index.html",
     "static/css/main.3b009213.chunk.css.map": "/curriculum/static/css/main.3b009213.chunk.css.map",
     "static/js/2.20a499f5.chunk.js.LICENSE.txt": "/curriculum/static/js/2.20a499f5.chunk.js.LICENSE.txt",
-    "static/media/Ulises Berasain CV.56d511c6.pdf": "/curriculum/static/media/Ulises Berasain CV.56d511c6.pdf",
+    "static/media/Ulises Berasain CV.11919395.pdf": "/curriculum/static/media/Ulises Berasain CV.11919395.pdf",
     "static/media/email-logo.a75357d0.png": "/curriculum/static/media/email-logo.a75357d0.png",
     "static/media/facebook-logo.5b4225fa.png": "/curriculum/static/media/facebook-logo.5b4225fa.png",
     "static/media/App.css": "/curriculum/static/media/fondo.353a92c2.jpg",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.0339ef57.js",
     "static/js/2.20a499f5.chunk.js",
     "static/css/main.3b009213.chunk.css",
-    "static/js/main.e4f6c68b.chunk.js"
+    "static/js/main.08e74ea1.chunk.js"
   ]
 }
